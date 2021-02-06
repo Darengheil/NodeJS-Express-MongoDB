@@ -5,7 +5,7 @@ const promoRouter = express.Router();
 
 promoRouter.use(bodyParser.json());
 
-// router for dishes
+// router for promotions
 promoRouter.route('/')
 
 .all((req, res, next) => {
@@ -31,7 +31,7 @@ promoRouter.route('/')
     res.end('Deleting all the promotions! ');
 });
 
-// router for dishesID
+// router for promoID
 promoRouter.route('/:promoId')
 
 .all((req, res, next) => {
