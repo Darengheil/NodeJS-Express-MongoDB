@@ -1,3 +1,4 @@
+// TODO
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 require('mongoose-currency').loadType(mongoose);
@@ -42,7 +43,7 @@ var dishSchema = new Schema({
     },
     label: {
         type: String,
-        default: ''
+        deafault: ''
     },
     price: {
         type: Currency,
