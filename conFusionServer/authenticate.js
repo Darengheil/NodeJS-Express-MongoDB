@@ -46,15 +46,22 @@ exports.verifyAdmin = function(req,res,next){
         next(err);
     }
 }
+
+// exports.verifyChangingComments = (req, res, next) => {
+//     if(dish.comments.author.id.equals(req.user.id)){
+//         next();
+//     }
+//     else{
+//         let err = new Error('You are not authorized to perform this operation!');
+//         err.status = 403;
+//         next(err);
+//     }
+// }
+
 /*
-exports.verifyChangingComments = (req, res, next) => {
-    if(req.comment.author._id.equals(req.user._id)){
-        next();
-    }
-    else{
-        let err = new Error('You are not authorized to perform this operation!');
-        err.status = 403;
-        next(err);
-    }
+if(!dish.comments.author.id.equals(req.user.id)){
+    let err = new Error('You are not authorized to perform this operation!');
+    err.status = 403;
+    next(err);
 }
 */
